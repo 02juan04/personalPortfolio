@@ -1,0 +1,19 @@
+body{
+    background-color: #ececec;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+ul{
+    list-style-type: none;
+    width: fit-content;
+}
+li{
+    display: block;
+    background-color: gray;
+    padding: 10px;
+}
+
+ul li:hover{
+background-color: lightgray;
+}
