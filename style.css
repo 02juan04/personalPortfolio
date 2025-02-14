@@ -1,7 +1,6 @@
 body{
     background-color: #4A4A4A;
     font-family: 'Roboto', sans-serif;
-    max-width: 100%;
     overflow-x: hidden;
     max-height: 100vh;
     margin: 0;
@@ -11,6 +10,9 @@ body{
 }
 
 .container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
     width: 100%;
     min-height: 100vh;
 }
@@ -35,7 +37,7 @@ nav ul a{
     margin: 0 60px;
     text-decoration: none;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 1000;
     display: inline-block;
     padding: 10px;
     border: solid transparent;
@@ -70,19 +72,16 @@ nav ul a:hover::after {
     font-family: 'Nimbus Mono PS', 'Courier New', monospace;
     font-weight: bold;
     gap: 7%;
+    color: #dbd1d1;
 }
 
 .header-content h1{
     font-size: 50px;
     padding: 0;
-    margin: 10px;
-    top:200px;
     left:25%;
-    justify-content: center;
 }
 
 .header-content p{
-    position: relative;
     font-size: 25px;
     text-align: center;
 }
@@ -101,4 +100,20 @@ footer{
     border-radius: 50% 20%;
     right: 30%;
     top: 30%;
+}
+
+.social-media{
+    display: flex;
+    font-size: 40px;
+    justify-content:center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-media a:visited, .social-media a:link{
+    color: white;
+}
+
+#icon-credit{
+    padding-right: 10px;
 }
