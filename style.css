@@ -2,11 +2,12 @@ body{
     background-color: #4A4A4A;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    height: 100vh;
     max-height: 100vh;
     margin: 0;
     padding: 0;
     justify-content: center;
-    min-height: 100vh;
+    align-items: center;
 }
 
 .container{
@@ -15,6 +16,8 @@ body{
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
+    justify-content: center;
+    scroll-snap-align: center;
 }
 
 nav{
@@ -63,22 +66,29 @@ nav ul a:hover::after {
     width: 100%;  /* Expands the underline */
 }
 
+
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header-content{
     display:flex;
-    position: relative;
+    width: 60%;
     justify-content: center;
     align-items: center;
     margin-top: 7%;
-    font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+    font-family: 'quicksand';
     font-weight: bold;
     gap: 7%;
     color: #dbd1d1;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
 }
 
 .header-content h1{
     font-size: 50px;
-    padding: 0;
-    left:25%;
 }
 
 .header-content p{
@@ -92,14 +102,18 @@ footer{
     
 }
 
+
+.image-container{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .image-container img{
-    width: 400px;
-    height: auto;
+    width: auto;
+    height: 500px;
     margin: 10px;
     border: black solid;
     border-radius: 50% 20%;
-    right: 30%;
-    top: 30%;
 }
 
 .social-media{
@@ -116,4 +130,65 @@ footer{
 
 #icon-credit{
     padding-right: 10px;
+}
+
+span .hello-animation{
+    animation: typewriter;
+    animation-duration: 1s;
+}
+
+
+/* About Me Page CSS */
+
+/* Main Container */
+
+
+
+.about-me-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    width: 60%; 
+    max-width: 900px;
+    height: auto; 
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.05); 
+    padding: 20px; 
+    border-radius: 10px;
+    margin-top: 1%;
+    border: white solid;
+}
+
+.first-content-container{
+    display: flex;
+    border: green solid;
+    height: fit-content;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+.left-side-first-text{
+    display: flex;
+    flex-direction: column;
+    border: blue solid;
+    width: 40%;
+    height: fit-content;
+    margin-left: 5%;
+}
+
+.right-side-first-image{
+    width: 40%;
+    height: auto;
+}
+
+.right-side-first-image img{
+    width: 40%;
+    height: inherit;
+    border: pink solid;
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <nav id="navbar"></nav>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <div class="about-me-wrapper">
+      <div class="about-me-container">
+        <div class="first-content-container">
+          <div class="left-side-first-text">
+            <p><span class="los-angeles">Los Angeles, CA</span></p>
+            <p class="intro">
+              My name is Juan Romero and I am 22 years old. I am currently a
+              senior at California State University, Los Angeles. My goal is to
+              become an important developer within the community and contribute
+              to society.
+            </p>
+          </div>
+          <div class="right-side-first-image">
+            <img src="images/s2k_beach.jpg" alt="" class="firstImage" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
