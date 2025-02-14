@@ -1,24 +1,31 @@
 body{
-    background-color: #e8e8e8;
+    background-color: #4A4A4A;
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
-    height: 100vh;
+    max-height: 100vh;
     margin: 0;
     padding: 0;
     justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
 }
 
 nav{
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
     max-width: 100%;
-    padding: 10px 0; 
-    margin: 30px 100px 0 0;
+    padding: 10px;
+    margin-top: 30px;
 }
 
 nav ul{ 
     display: flex;
-    justify-content: right;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -26,7 +33,6 @@ nav ul{
 nav ul a{
     position: relative;
     margin: 0 60px;
-    background-color: none;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -36,7 +42,7 @@ nav ul a{
 }
 
 nav ul a:link, nav ul a:visited{
-    color: black;
+    color: #d3c7c7;
 }
 
 nav ul a::after {
@@ -46,7 +52,7 @@ nav ul a::after {
     bottom: 0;  /* Places it right below the link */
     width: 0;  /* Initially hidden */
     height: 3px;  /* Sets underline thickness */
-    background-color: black;  /* Makes it visible */
+    background-color: #d3c7c7;  /* Makes it visible */
     transition: 0.3s;  /* Adds smooth animation */
     transform: translateX(-50%);  /* Ensures center alignment */
 }
@@ -58,18 +64,41 @@ nav ul a:hover::after {
 .header-content{
     display:flex;
     position: relative;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin-top: 7%;
+    font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+    font-weight: bold;
+    gap: 7%;
 }
 
 .header-content h1{
     font-size: 50px;
     padding: 0;
     margin: 10px;
+    top:200px;
+    left:25%;
+    justify-content: center;
+}
+
+.header-content p{
+    position: relative;
+    font-size: 25px;
+    text-align: center;
 }
 
 footer{
     display: flex;
     justify-content: right;
+    
+}
+
+.image-container img{
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    border: black solid;
+    border-radius: 50% 20%;
+    right: 30%;
+    top: 30%;
 }
