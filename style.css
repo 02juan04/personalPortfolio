@@ -46,7 +46,10 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+
 }
+
+
 
 nav ul a {
     position: relative;
@@ -55,7 +58,14 @@ nav ul a {
     font-size: 16px;
     font-weight: 700;
     color: #f5e1e1;
-    padding: 10px;
+    padding: 7px 15px;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+nav ul li a.nav-link-clicked {
+    background-color: white;
+    color: black; /* Add this to see the text color change as well */
 }
 
 nav ul a::after {
@@ -70,9 +80,18 @@ nav ul a::after {
     transform: translateX(-50%);
 }
 
+/*
+nav ul a:hover{
+    background-color: rgb(91, 91, 91);
+    border-width: fit-content;
+    transition: 0.3s;
+}
+    */
+ 
 nav ul a:hover::after {
     width: 100%;
 }
+
 
 /* Main Content */
 .main-content {
@@ -127,7 +146,7 @@ nav ul a:hover::after {
 
 .image-container img {
     max-width: 100%;
-    height: 500px;
+    height: 100%;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(42, 42, 43, 0.5);
 }
@@ -205,7 +224,6 @@ hr{
 /* Contact Me Page */
 
 .contact-container{
-    margin-top: -7%;
     border-radius: 15px;
     width: fit-content;
 }
