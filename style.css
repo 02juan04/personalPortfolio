@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: '', sans-serif;
     overflow-x: hidden;
     height: 100vh;
     margin: 0;
@@ -203,3 +203,67 @@ hr{
 }
 
 /* Contact Me Page */
+
+.contact-container{
+    margin-top: -7%;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 50px;
+    width: fit-content;
+}
+
+.user-input{
+    width: fit-content;
+}
+
+.contact-right input{
+    height: 40px;
+    width: 300px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px black solid;
+    font-size: 16px;
+}
+
+.contact-right textarea{
+    box-sizing: border-box;
+    height: 300px;
+    width: 650px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px black solid;
+    font-size: 20px;
+    padding: 15px;
+}
+.contact-right input:focus, .contact-right textarea{
+    outline: none;
+}
+
+.contact-right input:not(:focus):hover, .contact-right textarea:not(:focus):hover{
+    color: #444444;
+}
+
+.user-input{
+    margin-top: 60px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+#button-div button{
+    width: 150px;
+    height: 50px;
+    margin-top: 15px;
+}
+
