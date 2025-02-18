@@ -2,7 +2,6 @@
 
 /* Global Styles */
 body {
-    font-family: '', sans-serif;
     overflow-x: hidden;
     height: 100vh;
     margin: 0;
@@ -49,14 +48,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-
 }
-
-.smallNav{
-    display: none;
-}
-
-
 
 nav ul a {
     position: relative;
@@ -75,9 +67,6 @@ nav ul li a.nav-link-clicked {
     color: black;
 }
 
-#small-nav {
-    display: none;
-}
 
 /*
 nav ul a::after {
@@ -90,8 +79,7 @@ nav ul a::after {
     background-color: #d3c7c7;
     transition: 0.3s;
     transform: translateX(-50%);
-}
-    */
+}*/
 
 
 nav ul a:hover{
@@ -99,11 +87,73 @@ nav ul a:hover{
     border-width: fit-content;
     transition: 0.3s;
 }
- 
+
 nav ul a:hover::after {
     width: 100%;
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.hamburger span {
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f5e1e1;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 7px 15px;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.nav-links a.nav-link-clicked {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 0 0 15px 15px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
 
 /* Main Content */
 .main-content {
@@ -186,7 +236,7 @@ footer {
     backdrop-filter: blur(5px);
 }
 
-.about-me-wrapper h1{
+.about-me-wrapper h1 {
     font-size: 50px;
     text-align: center;
     margin-top: 5%;
@@ -234,14 +284,13 @@ footer {
     border-radius: 10px;
 }
 
-hr{
+hr {
     color: rgb(51, 49, 49);
     display: none;
 }
 
 /* Contact Me Page */
-
-.contact-container{
+.contact-container {
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
     display: flex;
@@ -252,11 +301,11 @@ hr{
     height: fit-content;
 }
 
-.user-input{
+.user-input {
     width: fit-content;
 }
 
-.contact-container input{
+.contact-container input {
     height: 40px;
     width: 300px;
     padding: 5px;
@@ -266,7 +315,7 @@ hr{
     font-size: 16px;
 }
 
-.contact-container textarea{
+.contact-container textarea {
     box-sizing: border-box;
     height: 300px;
     width: 650px;
@@ -277,122 +326,81 @@ hr{
     padding: 15px;
 }
 
-.contact-container h1{
+.contact-container h1 {
     font-size: 50px;
     margin-bottom: 20px;
 }
 
-.contact-container .name-email-inputs{
+.contact-container .name-email-inputs {
     width: fit-content;
 }
 
-.contact-container input:focus, .contact-container textarea{
+.contact-container input:focus, .contact-container textarea {
     outline: none;
 }
 
-.contact-container input:not(:focus):hover, .contact-container textarea:not(:focus):hover{
+.contact-container input:not(:focus):hover, .contact-container textarea:not(:focus):hover {
     color: #444444;
 }
 
-.user-input{
+.user-input {
     margin-top: 60px;
 }
 
-label{
+label {
     display: block;
     margin-bottom: 5px;
     font-size: 18px;
 }
 
-#button-div button{
+#button-div button {
     width: 150px;
     height: 50px;
     margin-top: 15px;
 }
 
-
-.material-symbols-outlined {
-    font-size: 100px;
-    font-variation-settings:
-      'FILL' 0,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 48;
-  }
-  
-
-  .mail-icon-div .material-symbols-outlined {
+.mail-icon-div .material-symbols-outlined {
     font-size: 150px; /* Try increasing this */
-  }
+}
 
-  @media(max-width: 1200px){
-    .about-me-container{
+@media(max-width: 1200px) {
+    .about-me-container {
         width: 80%;
     }
-  }
+}
 
-  @media(max-width: 750px){
-
-    .nav-container{
+@media(max-width: 750px) {
+    .nav-container {
         display: flex;
         justify-content: center;
         width: 100%;
         height: auto;
     }
 
-    nav{
+    nav {
         width: fit-content;
     }
 
-    nav ul a{
+    nav ul a {
         margin: 10px 30px 50px 10px; 
         font-size: 10px;
         padding: 0;
         margin: 25px;
     }
 
-
-/*
-    .smallNav{
-        display: flex;
-    }
-
-    .smallNav .hamburger-menu{
-        height: 60px;
-        background-color: #444444;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .smallNav .hamburger-menu .links-container{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    nav a{
-        height: 100%;
-        padding: 0 20px;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-
-    }
-    */
-    .contact-container{
+    .contact-container {
         flex-direction: column;
         max-width: 80%;
         position: fixed;
     }
 
-    .about-me-container{
+    .about-me-container {
         width: 90%;
         box-sizing: border-box;
         text-wrap: no-wrap;
     }
-    .text-section{
+
+    .text-section {
         font-size: small;
         width: 120%;
         border-radius: 15px;
@@ -400,86 +408,85 @@ label{
         margin: 0;
     }
 
-    .image-container{
+    .image-container {
         width: 60%;
         height: auto;
     }
 
-
-    /* contact me page */
-
-    .coctact-body{
+    /* Contact Page */
+    .coctact-body {
         gap: 55px;
     }
-    .contact-wrapper{
+
+    .contact-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100%;
     }
-    .contact-container{
+
+    .contact-container {
         display: flex;
         width: 90%;
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-top: ;
     }
 
-    .contact-container input{
+    .contact-container input {
         width: 290px;
         font-size: 17px;
     }
 
-    .contact-container label{
+    .contact-container label {
         display: block;
         clear: both;
     }
-    .contact-container textarea{
+
+    .contact-container textarea {
         width: 300px;
-        height:240px;
+        height: 240px;
         margin: 0;
         font-size: 17px;
-
     }
 
-    .contact-container h1{
+    .contact-container h1 {
         font-size: 35px;
         margin: 0;
     }
 
-    .user-input{
+    .user-input {
         text-align: start;
         justify-content: center;
         align-items: center;
     }
 
-    .container{
+    .container {
         display: static;
         flex-direction: column;
         justify-content: center;    
     }
 
-    .main-nav{
+    .main-nav {
         position: absolute;
         top: 200px;
     }
-    .main-content{
+
+    .main-content {
         width: 90%;
         padding: 20px;
     }
 
-    .main-content header h1{
+    .main-content header h1 {
         font-size: 35px;
     }
 
-    .main-content p{
+    .main-content p {
         font-size: 20px;
     }
 
-    .main-content .social-media{
+    .main-content .social-media {
         font-size: 25px;
     }
-    
 }
