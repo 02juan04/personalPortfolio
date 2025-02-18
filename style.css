@@ -569,6 +569,13 @@ label {
     /* About Me Section */
     .about-me-container {
         width: 400px;
+        height: 100vh;
+    }
+
+    .row-section{
+        height: fit-content;
+        padding: 0;
+        margin: 0;
     }
 
     .about-me-wrapper h1{
