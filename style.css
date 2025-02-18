@@ -363,12 +363,34 @@ label {
     font-size: 150px; /* Try increasing this */
 }
 
-@media(max-width: 1200px) {
-    .about-me-container {
+@media(max-width: 1450px) {
+    .main-content{
         width: 80%;
+    }
+
+    .main-content h1{
+        font-size: 40px;
+    }
+
+    .main-content p {
+        font-size: 25px;
     }
 }
 
+@media(max-width: 900px){
+
+    .about-me-container {
+        width: 80%;
+    }
+
+    .main-content h1 {
+        font-size: 35px;
+    }
+
+    .main-content p {
+        font-size: 20px;
+    }
+}
 @media(max-width: 750px) {
     .nav-container {
         display: flex;
@@ -395,7 +417,9 @@ label {
     }
 
     .about-me-container {
-        width: 90%;
+        width: 80%;
+        height: 100vh;
+        max-height: 750px;
         box-sizing: border-box;
         text-wrap: no-wrap;
     }
@@ -487,7 +511,7 @@ label {
     }
 }
 @media (max-width: 480px) {
-
+    /* Navigation Bar */
     nav {
         display: flex;
         justify-content: center;
@@ -502,44 +526,11 @@ label {
         padding: 0;
     }
 
+    /* Contact Page */
     .contact-container {
         flex-direction: column;
         max-width: 400px;
         position: relative;
-    }
-
-    .about-me-container {
-        width: 450px;
-    }
-
-    .text-section {
-        font-size: 14px;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .image-container {
-        width: 300px;
-        height: 200px;
-    }
-
-    .image-container img{
-        width: 200px;
-        height: 200px;
-    }
-
-    /* Contact Page */
-    .contact-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
-
-    .contact-container {
-        width: 450px;
-        text-align: center;
     }
 
     .contact-container input {
@@ -561,19 +552,53 @@ label {
         font-size: 28px;
     }
 
+    .contact-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
     .user-input {
         text-align: start;
         justify-content: center;
         align-items: center;
     }
 
+    /* About Me Section */
+    .about-me-container {
+        width: 400px;
+    }
+
+    .about-me-wrapper h1{
+        font-size: 35px;
+    }
+
+    .text-section {
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image-container {
+        width: auto;
+        height: auto;
+    }
+
+    .image-container img {
+        width: 300px;
+        height: 100%;
+    }
+
+    /* Main Content */
     .container {
         flex-direction: column;
         justify-content: center;
     }
 
     .main-content {
-        width: 400px;
+        width: 370px;
         padding: 15px;
         margin: 0;
     }
