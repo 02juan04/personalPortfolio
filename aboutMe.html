@@ -10,7 +10,9 @@
 </head>
 
 <body>
-  <nav id="navbar"></nav>
+  <div class="nav-container">
+    <nav id="navbar"></nav>
+  </div>
   <script>
     fetch("nav.html")
       .then((response) => response.text())
@@ -18,7 +20,9 @@
         document.getElementById("navbar").innerHTML = data;
       });
   </script>
+
   <div class="about-me-wrapper">
+    <h1>A Little About Me</h1>
     <div class="about-me-container">
       <div class="row-section">
         <div class="text-section">

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Global Styles */
 body {
     font-family: '', sans-serif;
@@ -16,7 +18,8 @@ body {
         #6e6e6e 80%,
         #2c2c2c 100% 
     );
-background-size: 200% 200%;
+    background-size: 200% 200%;
+    position: relative;
 }
 
 /* Container */
@@ -49,6 +52,10 @@ nav ul {
 
 }
 
+.smallNav{
+    display: none;
+}
+
 
 
 nav ul a {
@@ -65,28 +72,33 @@ nav ul a {
 
 nav ul li a.nav-link-clicked {
     background-color: white;
-    color: black; /* Add this to see the text color change as well */
+    color: black;
 }
 
+#small-nav {
+    display: none;
+}
+
+/*
 nav ul a::after {
     content: "";
     position: absolute;
     left: 50%;
     bottom: 0;
-    width: 0;
+    width: 0%;
     height: 3px;
     background-color: #d3c7c7;
     transition: 0.3s;
     transform: translateX(-50%);
 }
+    */
 
-/*
+
 nav ul a:hover{
     background-color: rgb(91, 91, 91);
     border-width: fit-content;
     transition: 0.3s;
 }
-    */
  
 nav ul a:hover::after {
     width: 100%;
@@ -112,12 +124,12 @@ nav ul a:hover::after {
 
 /* Header */
 .main-content h1 {
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
 }
 
 .main-content p {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -145,7 +157,7 @@ nav ul a:hover::after {
 }
 
 .image-container img {
-    max-width: 100%;
+    max-width: 80%;
     height: 100%;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(42, 42, 43, 0.5);
@@ -167,10 +179,17 @@ footer {
 /* About Me Section */
 .about-me-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'SamsungOne', sans-serif;
     backdrop-filter: blur(5px);
+}
+
+.about-me-wrapper h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5%;
 }
 
 .about-me-container {
@@ -181,7 +200,6 @@ footer {
     min-height: 100vh;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 5%;
     border: 1px rgb(97, 97, 97) solid;
     box-shadow: 10px 10px 20px rgba(42, 42, 43, 0.5);
 }
@@ -224,24 +242,21 @@ hr{
 /* Contact Me Page */
 
 .contact-container{
+    font-family: 'Poppins', sans-serif;
     border-radius: 15px;
-    width: fit-content;
-}
-
-.contact-right{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20% 50px;
     width: fit-content;
+    height: fit-content;
 }
 
 .user-input{
     width: fit-content;
 }
 
-.contact-right input{
+.contact-container input{
     height: 40px;
     width: 300px;
     padding: 5px;
@@ -251,7 +266,7 @@ hr{
     font-size: 16px;
 }
 
-.contact-right textarea{
+.contact-container textarea{
     box-sizing: border-box;
     height: 300px;
     width: 650px;
@@ -261,11 +276,21 @@ hr{
     font-size: 20px;
     padding: 15px;
 }
-.contact-right input:focus, .contact-right textarea{
+
+.contact-container h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-container .name-email-inputs{
+    width: fit-content;
+}
+
+.contact-container input:focus, .contact-container textarea{
     outline: none;
 }
 
-.contact-right input:not(:focus):hover, .contact-right textarea:not(:focus):hover{
+.contact-container input:not(:focus):hover, .contact-container textarea:not(:focus):hover{
     color: #444444;
 }
 
@@ -285,3 +310,176 @@ label{
     margin-top: 15px;
 }
 
+
+.material-symbols-outlined {
+    font-size: 100px;
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48;
+  }
+  
+
+  .mail-icon-div .material-symbols-outlined {
+    font-size: 150px; /* Try increasing this */
+  }
+
+  @media(max-width: 1200px){
+    .about-me-container{
+        width: 80%;
+    }
+  }
+
+  @media(max-width: 750px){
+
+    .nav-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    nav{
+        width: fit-content;
+    }
+
+    nav ul a{
+        margin: 10px 30px 50px 10px; 
+        font-size: 10px;
+        padding: 0;
+        margin: 25px;
+    }
+
+
+/*
+    .smallNav{
+        display: flex;
+    }
+
+    .smallNav .hamburger-menu{
+        height: 60px;
+        background-color: #444444;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .smallNav .hamburger-menu .links-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+    }
+    */
+    .contact-container{
+        flex-direction: column;
+        max-width: 80%;
+        position: fixed;
+    }
+
+    .about-me-container{
+        width: 90%;
+        box-sizing: border-box;
+        text-wrap: no-wrap;
+    }
+    .text-section{
+        font-size: small;
+        width: 120%;
+        border-radius: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .image-container{
+        width: 60%;
+        height: auto;
+    }
+
+
+    /* contact me page */
+
+    .coctact-body{
+        gap: 55px;
+    }
+    .contact-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .contact-container{
+        display: flex;
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: ;
+    }
+
+    .contact-container input{
+        width: 290px;
+        font-size: 17px;
+    }
+
+    .contact-container label{
+        display: block;
+        clear: both;
+    }
+    .contact-container textarea{
+        width: 300px;
+        height:240px;
+        margin: 0;
+        font-size: 17px;
+
+    }
+
+    .contact-container h1{
+        font-size: 35px;
+        margin: 0;
+    }
+
+    .user-input{
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        display: static;
+        flex-direction: column;
+        justify-content: center;    
+    }
+
+    .main-nav{
+        position: absolute;
+        top: 200px;
+    }
+    .main-content{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .main-content header h1{
+        font-size: 35px;
+    }
+
+    .main-content p{
+        font-size: 20px;
+    }
+
+    .main-content .social-media{
+        font-size: 25px;
+    }
+    
+}
