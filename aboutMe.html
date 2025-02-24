@@ -8,6 +8,7 @@
   <link href="https://fonts.cdnfonts.com/css/samsungone" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>About Me</title>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,7 @@
         document.getElementById("navbar").innerHTML = data;
       });
   </script>
-
-  <div class="about-me-wrapper">
+  <section class="about-me-wrapper">
     <h1>A Little About Me</h1>
     <div class="about-me-container">
       <div class="row-section">
@@ -59,9 +59,7 @@
       <div class="row-section">
         <div class="text-section">
           <hr />
-          I have always been interested in videogames from the time my father
-          bought me my first gaming console. I enjoy playing titles like
-          Overwatch, Call of Duty, the new Marvel Rivals, etc.
+            Video games have always been one of my favorite pastimes as well. I enjoy playing titles like Overwatch, Call of Duty, and Marvel Rivlas.
           <hr />
         </div>
         <div class="image-container">
@@ -69,7 +67,57 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <section class="projects-section">
+    <div class="projects-container">
+      <div class="cards-container">
+        <div class="card">
+            <div class="project-title">
+                <h2>Book Exchange</h2>
+            </div>
+            <hr/>
+        </div>
+        <div class="card">
+            <div class="project-title">
+                <h2>To-do List</h2>
+            </div>
+            <hr/>
+        </div>
+        <div class="card">
+            <div class="project-title">
+                <h2>Book Exchange</h2>
+            </div>
+            <hr/>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section">
+    <div class="contact-wrapper">
+      <div class="contact-container">
+        <h1>Get in Contact With Me!</h1>
+        <form action="" id="contact-form">
+          <div class="name-email-inputs">
+            <div class="user-input">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" placeholder="Your Name" />
+            </div>
+            <div class="user-input">
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" placeholder="Your email" />
+            </div>
+          </div>
+          <div class="user-input">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+          </div>
+          <div id="button-div">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
   <footer>
     <p id="icon-credit">
       Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
@@ -78,3 +126,5 @@
 </body>
 
 </html>
+
+

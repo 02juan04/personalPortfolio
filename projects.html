@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav id="navbar"></nav>
+    </div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <div class="projects-container">
+      <div class="cards-container">
+        <div class="card">
+            <div class="project-title">
+                <h2>Book Exchange</h2>
+            </div>
+            <hr/>
+        </div>
+        <div class="card">
+            <div class="project-title">
+                <h2>To-do List</h2>
+            </div>
+            <hr/>
+        </div>
+        <div class="card">
+            <div class="project-title">
+                <h2>Book Exchange</h2>
+            </div>
+            <hr/>
+        </div>
+      </div>
+    </div>
+  </body>
+</html
