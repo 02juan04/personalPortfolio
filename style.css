@@ -325,9 +325,10 @@ hr {
 
 .contact-container input {
     height: auto;
-    width: 400px;
+    width: 300px;
+    margin: 0 10px;
     padding: 15px;
-    border-radius: 1.5em;
+    border-radius: 10px;
     border: none;
     box-shadow: 10px 10px 50px rgba(42, 42, 43, 0.5);
     background-color: transparent;
@@ -337,12 +338,12 @@ hr {
 .contact-container textarea {
     box-sizing: border-box;
     height: 200px;
-    width: 550px;
+    width: 680px;
     padding: 5px;
     background-color: transparent;
     border: none;
     box-shadow: 10px 10px 50px rgba(42, 42, 43, 0.5);
-    border-radius: 1.5em;
+    border-radius: 10px;
     font-size: 20px;
     padding: 15px;
 }
@@ -353,6 +354,7 @@ hr {
 }
 
 .contact-container .name-email-inputs {
+    display: flex;
     width: fit-content;
 }
 
@@ -371,6 +373,7 @@ hr {
 label {
     display: block;
     margin-bottom: 5px;
+    margin-left: 15px;
     font-size: 18px;
 }
 
