@@ -765,7 +765,7 @@ hr {
         width: 370px;
         padding: 15px;
         margin: 0;
-
+        gap: 0px
     }
 
     .main-content .image-container{
