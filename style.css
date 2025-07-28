@@ -157,7 +157,8 @@ nav ul a:hover::after {
 /* Main Content */
 .main-content {
     display: flex;
-    width: 60%;
+    height: 60%;
+    width: 70%;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -298,20 +299,43 @@ hr {
 
 /* Tools Section */
 
-.languages{
+
+#tools-section{
     display: flex;
+    margin-top: 200px;
+    box-sizing: border-box;
 }
 
-.titles {
+.tools-container span {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
 }
-.icons {
-    width: 100px;
-    height: 100px;
+
+
+.tools-title{
+    font-size: 20;
+    font-weight: 600;
+    color: #414141;
+    margin: 0 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.language-icons-container {
+    display: flex;
+    width: auto;
+    height: 80px;
+    justify-content: center;
+}
+
+.language-icons-container svg{
+    width: 80px;
+    height: auto;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px rgba(42, 42, 43, 0.5);
+    border-radius: 10px;
+    margin: 0px 10px;
 }
 
 /* Contact Me Page */
@@ -686,32 +710,44 @@ hr {
         padding: 10px;
     }
 
-    .image-container {
+    #about-me-section .image-container {
         width: auto;
         height: auto;
     }
 
-    .image-container img {
-        width: 300px;
+    #about-me-section .image-container img {
+        width: 150px;
         height: 100%;
     }
 
     /* Main Content */
+    
     .container {
         flex-direction: column;
         justify-content: center;
     }
 
     .main-content {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
         width: 370px;
         padding: 15px;
         margin: 0;
-    }
-
-    .main content .image-container{
-        width: 350px;
 
     }
+
+    .main-content .image-container{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .main-content .image-container img {
+        width: 175px;
+        height: auto;
+    }
+
 
     .main-content header h1 {
         font-size: 30px;
@@ -723,5 +759,32 @@ hr {
 
     .main-content .social-media {
         font-size: 20px;
+    }
+
+    /*Tools Section */
+
+    #tools-section {
+        margin: 125px 0 125px 0
+    }
+    .tools-container{
+        max-width: 400px;
+        height: auto;
+    }
+
+    .tools-container span {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .tools-container h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: none;
+        padding: 7px;
+    }
+
+    .language-icons-container {
+        max-width: 100%;;
     }
 }
