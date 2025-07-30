@@ -1,52 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap"
-    rel="stylesheet" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-
-</head>
-
-<body>
-  <nav id="navbar" class="main-nav"></nav>
-  <script>
-    fetch("nav.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById("navbar").innerHTML = data;
-      });
-  </script>
-  <div class="container">
-    <div class="main-content">
-      <header>
-        <h1>Juan Romero</h1>
-        <p>Software Engineer</p>
-        <div class="social-media">
-          <a href="https://github.com/02juan04" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://linkedin.com/in/juan-romero-865239123" target="_blank"><i
-              class="fa-brands fa-linkedin"></i></a>
-        </div>
-      </header>
-      <div class="image-container">
-        <img src="images/1h7t80l9.bmp" alt="Image of Juan Romero" id="imageID" />
-      </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav id="navbar" class="main-nav">
+        <ul>
+          <li><a class="navLink" href="#home-section">Home</a></li>
+          <li><a class="navLink" href="#start-of-about-me">About Me</a></li>
+          <li><a class="navLink" href="#projects-section">Projects</a></li>
+          <li><a class="navLink" href="#contact-section">Contact Me</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
 
-  <footer>
-    <p id="icon-credit">
-      Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
-    </p>
-  </footer>
-</body>
+    <section id="home-section" class="container">
+      <div class="main-content">
+        <header>
+          <h1>Juan Romero</h1>
+          <p>Software Engineer</p>
+          <div class="social-media">
+            <a href="https://github.com/02juan04" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/juan-romero-865239123"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </header>
+        <div class="image-container">
+          <img
+            src="images/1h7t80l9.bmp"
+            alt="Image of Juan Romero"
+            id="imageID"
+          />
+        </div>
+      </div>
+    </section>
 
+    <section id="about-me-section" class="about-me-wrapper">
+      <h1 id="start-of-about-me">A Little About Me</h1>
+      <div class="about-me-container">
+        <div class="row-section">
+          <div class="text-section">
+            <p><span class="los-angeles">Los Angeles, CA</span></p>
+            <p class="intro">
+              Hi, I'm Juan Romero, a 22-year-old senior at California State
+              University, Los Angeles. I'm passionate about software development
+              and aspire to make a meaningful impact in my community by building
+              innovative solutions that benefit society.
+            </p>
+          </div>
+          <div class="image-container">
+            <img
+              src="images/4uhoyws8.bmp"
+              alt=""
+              class="firstImage"
+              aria-placeholder="csulaImage"
+            />
+          </div>
+        </div>
+        <div class="row-section">
+          <div class="image-container">
+            <img
+              src="images/muaythai.png"
+              alt=""
+              aria-placeholder="muaythaiImage"
+            />
+          </div>
+          <div class="text-section">
+            I began training Muay Thai in October 2024, and it quickly became
+            one of my favorite pastimes. I think it's not just a great workout,
+            but it's a powerful way to stay disciplined, and break free from the
+            daily routine.🥊🔥
+          </div>
+        </div>
+        <div class="row-section">
+          <div class="text-section">
+            Video games have always been one of my favorite pastimes as well. I
+            enjoy playing titles like Overwatch, Call of Duty, and Marvel
+            Rivals.
+          </div>
+          <div class="image-container">
+            <img
+              src="images/overwatch-logo.png"
+              alt=""
+              aria-placeholder="overwatch-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools-section">
+      <div class="tools-container">
+        <span>
+          <h2 class="tools-title">Languages</h2>
+          <h2 class="tools-title">Databases</h2>
+          <h2 class="tools-title">Tools</h2>
+          <h2 class="tools-title">Frameworks</h2>
+        </span>
+
+        <div class="language-icons-container">
+          <img
+            src="images/icons/java-svgrepo-com.svg"
+            alt="image of html logo"
+          />
+          <img
+            src="images/icons/kotlin-svgrepo-com.svg"
+            alt="image of html logo"
+          />
+          <img
+            src="images/icons/mysql-svgrepo-com.svg"
+            alt="image of html logo"
+          />
+          <img
+            src="images/icons/javascript-svgrepo-com.svg"
+            alt="image of javascript logo"
+          />
+          <img
+            src="images/python-svgrepo-com.svg"
+            alt="image of python logo"
+            \
+          />
+          <img
+            src="images/icons/go-svgrepo-com.svg"
+            alt="image of python logo"
+            \
+          />
+          <img
+            src="images/icons/mongodb-svgrepo-com.svg"
+            alt="image of python logo"
+            \
+          />
+          <img
+            src="images/icons/react-svgrepo-com.svg"
+            alt="image of python logo"
+            \
+          />
+          <img
+            src="images/icons/next-js-svgrepo-com.svg"
+            alt="image of python logo"
+            \
+          />
+          <img
+            src="images/icons/node-js-svgrepo-com.svg"
+            alt="image of python logo"
+            \
+          />
+          <img
+            src="images/icons/git-svgrepo-com.svg"
+            alt="image of python logo"
+            \
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects-section">
+      <div class="projects-container">
+        <div class="cards-container">
+          <div class="card">
+            <div class="project-title">
+              <h2>Book Exchange</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project-title">
+              <h2>To-do List</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project-title">
+              <h2>E-Commerce</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section" class="contact-section">
+      <div class="contact-wrapper">
+        <div class="contact-container">
+          <h1>Get In Contact</h1>
+          <form action="" id="contact-form">
+            <div class="name-email-inputs">
+              <div class="user-input">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="user-input">
+                <label for="email">Email:</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Your email"
+                />
+              </div>
+            </div>
+            <div class="user-input">
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <div id="button-div">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
