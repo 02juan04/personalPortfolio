@@ -21,9 +21,7 @@ body {
 .container {
     display: flex;
     width: 100%;
-    min-height: 100vh;
     justify-content: center;
-    align-items: center;
 }
 
 /* Navigation Bar */
@@ -68,25 +66,22 @@ nav ul a {
     color: black;
 }
 
-/* nav ul a::after {
+nav ul a::after {
     content: "";
     position: absolute;
     left: 50%;
     bottom: 0;
-    width: 0%;
-    height: 3px;
-    background-color: #d3c7c7;
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
     transition: 0.3s;
     transform: translateX(-50%);
-} */
-
-nav ul a:hover {
-    background-color: rgb(53, 53, 53);
-    border-width: fit-content;
-    transition: 0.3s;
+    z-index: -1;
+    border-radius: 15px;
 }
 
 nav ul a:hover::after {
+    background-color: rgb(53, 53, 53);
     width: 100%;
 }
 
@@ -131,23 +126,32 @@ nav ul a:hover::after {
 /* Main Content */
 .main-content {
     display: flex;
-    height: 60%;
-    width: 70%;
+    margin-top: 100px;
+    height: fit-content;
+    width: 100%;
     justify-content: center;
     align-content: center;
     align-items: center;
     font-weight: bold;
-    gap: 7%;
     color: #F8F9FA;
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    box-shadow: 10px 10px 30px rgba(42, 42, 43, 0.5);
-    backdrop-filter: blur(5px);
+}
+
+#my-mugshot{
+    width: 200px;
+    height: 200px;
+}
+
+#my-mugshot img{
+    width: inherit;
+    height: inherit;
+    border-radius: 100%;
+    object-fit: contain;
 }
 
 /* Header */
 .main-content h1 {
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -397,7 +401,8 @@ label {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 700px
+    height: fit-content;
+    margin-top: 100px;
 }
 
 .cards-container {
@@ -410,23 +415,49 @@ label {
     padding: 10px;
 }
 
-.projects-container .card {
-    height: 300px;
+.card {
+    height: fit-content;
     width: 450px;
     border-radius: 1.5em;
-    transition: 0.5s;
-    box-shadow: 1px 1px 5px rgba(42, 42, 43, 0.5);
+    transition: 0.5s ease;
+    padding: 10px;
+    margin: 0 10px 0 10px;
 }
 
+.project-card-header{
+    border-radius: 10px;
+    background-color: #a4a1a1;
+    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
+    padding: 7px 20px 7px 20px;
+    width: fit-content;
+    letter-spacing: 1px;
+}
+
+.card-game-image{
+    width: 100%;
+    object-fit: contain;
+    border-radius: inherit;
+}
 .projects-container .card:hover {
-    height: 350px;
-    width: 470px;
+    transform: scale(1.05);
     box-shadow: 10px 10px 20px rgba(42, 42, 43, 0.5);
     position: relative;
 }
 
-.card .project-title {
-    text-align: center;
+.project-description-container{
+    font-size: 20px;
+}
+
+.project-card-footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.project-card-footer img{
+    object-fit: contain;
 }
 
 hr {
@@ -762,17 +793,12 @@ hr {
         display: flex;
         flex-direction: column;
         max-width: 100%;
-        width: 370px;
+        width: 100%;
         padding: 15px;
         margin: 0;
         gap: 0px
     }
 
-    .main-content .image-container{
-        max-width: 100%;
-        width: auto;
-        height: auto;
-    }
 
     .main-content .image-container img {
         width: 175px;
@@ -838,5 +864,8 @@ hr {
     }
     .projects-container {
         height: auto;
+    }
+    .card{
+        margin-bottom: 50px;
     }
 }
