@@ -34,15 +34,15 @@
     <div class="main-content">
       <header>
         <h1>Juan Romero</h1>
-        <p>Software Engineer</p>
+        <p>Front-End Developer</p>
         <div class="social-media">
           <a href="https://github.com/02juan04" target="_blank"><i class="fa-brands fa-github"></i></a>
           <a href="https://linkedin.com/in/juan-romero-865239123" target="_blank"><i
               class="fa-brands fa-linkedin"></i></a>
         </div>
       </header>
-      <div class="image-container">
-        <img src="images/1h7t80l9.bmp" alt="Image of Juan Romero" id="imageID" />
+      <div id="my-mugshot">
+        <img src="images/mugshot.JPG" alt="Image of Juan Romero" id="imageID" />
       </div>
     </div>
   </section>
@@ -102,13 +102,13 @@
         <img src="images/icons/kotlin-svgrepo-com.svg" alt="image of html logo" />
         <img src="images/icons/mysql-svgrepo-com.svg" alt="image of html logo" />
         <img src="images/icons/javascript-svgrepo-com.svg" alt="image of javascript logo" />
-        <img src="images/python-svgrepo-com.svg" alt="image of python logo" \ />
-        <img src="images/icons/go-svgrepo-com.svg" alt="image of python logo" \ />
-        <img src="images/icons/mongodb-svgrepo-com.svg" alt="image of python logo" \ />
-        <img src="images/icons/react-svgrepo-com.svg" alt="image of python logo" \ />
-        <img src="images/icons/next-js-svgrepo-com.svg" alt="image of python logo" \ />
-        <img src="images/icons/node-js-svgrepo-com.svg" alt="image of python logo" \ />
-        <img src="images/icons/git-svgrepo-com.svg" alt="image of python logo" \ />
+        <img src="images/python-svgrepo-com.svg" alt="image of python logo" />
+        <img src="images/icons/go-svgrepo-com.svg" alt="image of go logo" />
+        <img src="images/icons/mongodb-svgrepo-com.svg" alt="image of mongodb logo" />
+        <img src="images/icons/react-svgrepo-com.svg" alt="image of react logo" />
+        <img src="images/icons/next-js-svgrepo-com.svg" alt="image of nextjs logo" />
+        <img src="images/icons/node-js-svgrepo-com.svg" alt="image of nodejs logo" />
+        <img src="images/icons/git-svgrepo-com.svg" alt="image of git logo" />
       </div>
     </div>
   </section>
@@ -117,42 +117,130 @@
     <div class="projects-container">
       <div class="cards-container">
         <div class="card">
-          <div class="project-title">
-            <h2>Book Exchange</h2>
+          <h2 class="project-card-header"><a target="_blank" href="https://card-memorization-game.vercel.app/">Card
+              Order
+              Memorization
+              Game</a></h2>
+          <img class="card-game-image" src="../Scrollable/images/card-game-image.png" alt="card-game-image" />
+          <div class="project-description-container">
+            <p id="card-project-description-1">
+              This is a game where a user generates a randomized deck of card,
+              memorizes the order, and tries to put the cards back in order
+            </p>
+            <p id="card-project-description-2">
+              Main Menu
+            <ul>
+              <li>Input number of cards</li>
+              <li>defaults to 52 if no input</li>
+            </ul>
+            </p>
+            <p id="card-project-description-3">
+            <p>Memorization Stage</p>
+            <ul>
+              <li>User can Browse deck of cards by looking at the entire deck at once,
+                or by going through a batch of three cards all the way till the end</li>
+            </ul>
+            <p>Order Stage</p>
+            <ul>
+              <li>When user is ready, they will see empty slots where they can input
+                cards in order. Recieves feedback for right or wrong.</li>
+            </ul>
+
+
+            </p>
+          </div>
+          <div class="project-card-footer">
+            <img src="/Scrollable/images/icons/javascript-svgrepo-com.svg" alt="javacript logo">
+            <img src="/Scrollable/images/icons/vitejs-svgrepo-com.svg" alt="javacript logo">
+            <img src="/Scrollable/images/icons/tailwind-svgrepo-com.svg" alt="javacript logo">
+            <img src="/Scrollable/images/icons/vercel-svgrepo-com.svg" alt="vercel logo">
+
           </div>
         </div>
+
         <div class="card">
-          <div class="project-title">
-            <h2>To-do List</h2>
+          <h2 class="project-card-header"><a href="">Task Tracker</a></h2>
+          <img class="card-game-image" src="../Scrollable/images/task-project-image.png" alt="task-traker-image" />
+          <div class="project-description-container">
+            <p id="task-project-description-1">
+              This project allows the user to create, delete, and archive tasks.
+            </p>
+            <p id="task-project-description-2">
+              New Tasks get added to the 'Tasks in Progress' list, while completed
+              ones get added to the 'Completed Tasks' list.
+            </p>
+            <p id="task-project-description-3">Archiving tasks is also a feature. This allows users to put these tasks
+              aside for later. These tasks get put into the 'Archived' tab, accessible
+              through the <code>navbar</code>
+            </p>
+          </div>
+          <div class="project-card-footer">
+            <img src="/Scrollable/images/icons/react-svgrepo-com.svg" alt="react-logo">
+            <img src="/Scrollable/images/icons/vitejs-svgrepo-com.svg" alt="javacript logo">
+            <img src="/Scrollable/images/icons/tailwind-svgrepo-com.svg" alt="javacript logo">
           </div>
         </div>
+
         <div class="card">
-          <div class="project-title">
-            <h2>E-Commerce</h2>
+          <h2 class="project-card-header"><a href="https://football-stats-live.vercel.app" target="_blank">Live Foot
+              Ball Stats</a></h2>
+          <img class="card-game-image" src="../Scrollable/images/live-project-image.png" alt="live-football-stats" />
+          <div class="project-description-container">
+            <div class="project-description-container">
+              <p>This project utilizes API-Football for information about leagues, teams, and fixtures.</p>
+              <p>Users can choose from a variety of leagues, and view the current standings from users choice.
+                Including: (but not limited to)
+              <ul>
+                <li>Champions League</li>
+                <li>Premier League</li>
+                <li>La Liga</li>
+                <li>Liga MX</li>
+              </ul>
+              </p>
+              <p>Different seasons can also be chosen, limited by the information of the API</p>
+              <p>Standings Section
+              <ul>
+                <li>View up to Date standings for chosen league. Updates accordingly</li>
+              </ul>
+              </p>
+              <p>League Matches Section
+              <ul>
+                <li>Displays last 10 matches of the league including LIVE matches</li>
+                <li>Dynamically changes UI if the game is Live, or Completed</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <img src="/Scrollable/images/icons/next-js-svgrepo-com.svg" alt="react-logo">
+            <img src="/Scrollable/images/icons/tailwind-svgrepo-com.svg" alt="tailwind logo">
+            <img src="/Scrollable/images/icons/api-interface-svgrepo-com.svg" alt="api logo">
+            <img src="/Scrollable/images/icons/vercel-svgrepo-com.svg" alt="vercel logo">
           </div>
         </div>
       </div>
-    </div>
+    </div>l
   </section>
 
   <section id="contact-section" class="contact-section">
     <div class="contact-wrapper">
       <div class="contact-container">
         <h1>Get In Contact</h1>
-        <form action="" id="contact-form">
+        <form action="https://api.web3forms.com/submit" method="post" id="contact-form">
+          <input type="hidden" name="access_key" value="f6106bc5-17be-45c0-9cfa-c2e88665b1bb">
           <div class="name-email-inputs">
             <div class="user-input">
               <label for="name">Name:</label>
-              <input type="text" name="name" id="name" placeholder="Your Name" />
+              <input type="text" name="name" id="name" placeholder="Your Name" required />
             </div>
             <div class="user-input">
               <label for="email">Email:</label>
-              <input type="text" name="email" id="email" placeholder="Your email" />
+              <input type="email" name="email" id="email" placeholder="Your email" required />
             </div>
           </div>
           <div class="user-input">
             <label for="message">Message:</label>
-            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
           </div>
           <div id="button-div">
             <button type="submit">Submit</button>
