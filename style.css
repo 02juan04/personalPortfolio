@@ -155,7 +155,7 @@ nav ul a:hover::after {
     color: #F8F9FA;
     box-shadow: #121212 100px;
     font-family: "Archivo Black", sans-serif;
-    animation: fade-out linear forwards;
+    animation: fade-out linear;
     animation-timeline: scroll();
     animation-range-start: contain;
     animation-range-end: 400px;
