@@ -145,6 +145,7 @@ nav ul a:hover::after {
     position: relative;
     min-width: 100%;
     min-height: 100vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -155,10 +156,9 @@ nav ul a:hover::after {
     color: #F8F9FA;
     box-shadow: #121212 100px;
     font-family: "Archivo Black", sans-serif;
-    animation: fade-out linear;
+    animation: fade-out 1s linear;
     animation-timeline: scroll();
-    animation-range-start: contain;
-    animation-range-end: 400px;
+    animation-range: entry 0% exit 100%;
 }
 header{
     display: flex;
@@ -177,6 +177,9 @@ header{
     box-shadow: 6px 6px#121212;
     cursor: pointer;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #home-section .contact-me-button:hover, button:hover{
     background-color: rgb(215, 207, 207);
@@ -226,14 +229,12 @@ header{
     animation: typing forwards steps(25, start) 2s;
 }
 
+
 @keyframes fade-out{
-    from{
-        opacity: 100%;
-    }
-    to{
-        opacity : 0%;
-    }
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
+
 
 @keyframes typing{
     0%{
