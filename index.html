@@ -138,28 +138,25 @@
         </h2>
         <img class="card-game-image" src="images/card-game-image.png" alt="card-game-image" />
         <div class="project-description-container">
-          <p id="card-project-description-1">
-            This is a game where a user generates a randomized deck of card,
-            memorizes the order, and tries to put the cards back in order
+          <p>
+            Card Order Memorization Game is a frontend application that challenges users
+            to memorize and reconstruct a randomized deck of playing cards in correct order.
           </p>
-          <p>Main Menu</p>
-          <ul>
-            <li>Input number of cards</li>
-            <li>Defaults to 52 if no input</li>
-          </ul>
-          <p id="card-project-description-3">
-          <p>Memorization Stage</p>
-          <ul>
-            <li>User can Browse deck of cards by looking at the entire deck at once,
-              or by going through a batch of three cards all the way till the end</li>
-          </ul>
-          <p>Order Stage</p>
-          <ul>
-            <li>When user is ready, they will see empty slots where they can input
-              cards in order. Recieves feedback for right or wrong.</li>
-          </ul>
 
+          <p>
+            Users can generate a custom deck size (defaulting to a full 52-card deck) and
+            enter a memorization phase where they can view cards either all at once or in
+            smaller batches to improve recall.
+          </p>
 
+          <p>
+            In the recall phase, users must reconstruct the original order by placing cards
+            into empty slots, receiving immediate feedback on correct and incorrect inputs.
+          </p>
+
+          <p>
+            The project focuses on state-driven UI rendering, user interaction flow, and
+            game logic implementation using JavaScript.
           </p>
         </div>
         <div class="project-card-footer">
@@ -177,27 +174,27 @@
         <img class="card-game-image" src="images/live-project-image.png" alt="live-football-stats" />
         <div class="project-description-container">
           <div class="project-description-container">
-            <p>This project utilizes API-Football for information about leagues, teams, and fixtures.</p>
-            <p>Users can choose from a variety of leagues, and view the current standings from users choice.
-              Including: (but not limited to)
-            <ul>
-              <li>Champions League</li>
-              <li>Premier League</li>
-              <li>La Liga</li>
-              <li>Liga MX</li>
-            </ul>
+            <p>
+              Live Football Stats is a frontend application that uses the API-Football service
+              to display real-time data for leagues, teams, fixtures, and standings.
             </p>
-            <p>Different seasons can also be chosen, limited by the information of the API</p>
-            <p>Standings Section
-            <ul>
-              <li>View up to Date standings for chosen league. Updates accordingly</li>
-            </ul>
+
+            <p>
+              Users can select from multiple leagues, including the Premier League,
+              Champions League, La Liga, and Liga MX, and view dynamically updated standings
+              based on season selection.
             </p>
-            <p>League Matches Section
-            <ul>
-              <li>Displays last 10 matches of the league including LIVE matches</li>
-              <li>Dynamically changes UI if the game is Live, or Completed</li>
-            </ul>
+
+            <p>
+              The application features asynchronous data fetching from an external API,
+              allowing match and league data to update dynamically without blocking the UI.
+              It also includes a live matches section with real-time status indicators for
+              ongoing and completed games.
+            </p>
+
+            <p>
+              Built with a focus on dynamic state-driven rendering, the interface updates
+              automatically based on fetched data to reflect current match and league states.
             </p>
           </div>
         </div>
@@ -215,21 +212,31 @@
         <img class="card-game-image" src="images/task-project-image.png" alt="task-traker-image" />
         <div class="project-description-container">
           <p id="task-project-description-1">
-            This project allows the user to create, delete, and archive tasks.
+            Full-stack task management application built with React, Tailwind CSS,
+            Supabase, and PostgreSQL.
           </p>
+
           <p id="task-project-description-2">
-            New Tasks get added to the 'Tasks in Progress' list, while completed
-            ones get added to the 'Completed Tasks' list.
+            Users can perform full CRUD operations (create, read, update, and delete tasks),
+            with real time synchronization between the UI and database.
           </p>
-          <p id="task-project-description-3">Archiving tasks is also a feature. This allows users to put these tasks
-            aside for later. These tasks get put into the 'Archived' tab, accessible
-            through the <code>navbar</code>
+
+          <p id="task-project-description-3">
+            Features include task completion, archiving, and dynamic filtering across
+            multiple views, implemented using reusable React components and asynchronous
+            database requests.
+          </p>
+          <p id="task-project-description-4">React • Vite • Tailwind CSS • Supabase • Vercel • PostgreSQL
           </p>
         </div>
+
         <div class="project-card-footer">
           <img src="images/icons/react-svgrepo-com.svg" alt="react-logo">
           <img src="images/icons/vitejs-svgrepo-com.svg" alt="javacript logo">
           <img src="images/icons/tailwind-svgrepo-com.svg" alt="javacript logo">
+          <img src="images/icons/supabase-logo-icon.svg" alt="supabase logo">
+          <img src="images/icons/vercel-svgrepo-com.svg" alt="vercel logo">
+          <img src="images/icons/postgresql-icon.svg" alt="posgres icon">
         </div>
       </div>
     </div>
