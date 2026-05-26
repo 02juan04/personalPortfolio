@@ -635,6 +635,27 @@ label {
     line-height: 35px;
 }
 
+strong {
+  font-size: 22px;
+  color: #5c8eb8; 
+  
+  background: linear-gradient(90deg, #dde3de, #1aeb2f, #dde3de);
+  background-size: 200% auto;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  
+  animation: shift-gradient 2s linear infinite;
+}
+
+@keyframes shift-gradient {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+
+
 #task-project-description-4{
     font-size: 15px;
     text-align: center;
